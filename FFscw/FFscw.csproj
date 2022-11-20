@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+	<BaseOutputPath>C:\Users\Visual Laser 10 New\source\repos\FFsc\PublishVersion</BaseOutputPath>
+	<Title>FFsc</Title>
+	<Authors>Ema3nto</Authors>
+	<Company>Visual Laser 10 New</Company>
+	<Copyright>VL10New</Copyright>
+	<Description>Fast file search terminal tool for windows</Description>
+	<StartupObject>FFscw.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FFscDB\FFscDB.csproj" />
+    <ProjectReference Include="..\GlobalVar\FFGlobalVar.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Config\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Config\config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Config\config.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

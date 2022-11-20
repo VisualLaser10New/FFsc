@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="config.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+
+<ffsc version="1.0">
+    <config id="0" active="true" root="C:\\Users\Visual Laser 10 New\Desktop\">
+        <directory>
+            <excluded>
+                <exclude path="C:\\Users\Visual Laser 10 New\Desktop\apk easy tool\"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type ="path"/>
+            </excluded>
+            <included>
+            </included>
+        </directory>
+        <file>
+            <excluded>
+            </excluded>
+            <included>
+            </included>
+        </file>
+    </config>
+	<config id="1" active="true" root="C:\\Windows\">
+		<directory>
+			<excluded>
+			</excluded>
+			<included>
+			</included>
+		</directory>
+		<file>
+			<excluded>
+			</excluded>
+			<included>
+			</included>
+		</file>
+	</config>
+</ffsc>

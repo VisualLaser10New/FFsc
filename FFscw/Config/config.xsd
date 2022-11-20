@@ -1,0 +1,57 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="ffsc">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="config" minOccurs="1" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="directory" type="DirAndFile"/>
+							<xs:element name="file" type="DirAndFile" />	
+						</xs:sequence>
+
+						<xs:attribute name="active" type="xs:boolean" use="required"/>
+						<xs:attribute name="root" type="xs:anyURI" use="required"/>
+						<xs:attribute name="id" type="xs:ID" use="required"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="version" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:complexType name="DirAndFile">
+		<xs:sequence>
+			<xs:element name="excluded" minOccurs="1" maxOccurs="1">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="exclude" type="excludeType" minOccurs="0" maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+
+			<xs:element name="included" minOccurs="1" maxOccurs="1">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="include" type="excludeType" minOccurs="0" maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="excludeType" abstract="true"/>
+	<xs:complexType name="path">
+		<xs:complexContent>
+			<xs:extension base="excludeType">
+				<xs:attribute name="path" type="xs:anyURI" use="required"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="name">
+		<xs:complexContent>
+			<xs:extension base="excludeType">
+				<xs:attribute name="name" type="xs:string" use="required"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+</xs:schema>
