@@ -60,6 +60,7 @@ namespace FFscw
 				exit(1);
 			}
 
+
 			if (args.ToList().Contains("-r"))
 			{
 				//kill other instances of applications
@@ -70,9 +71,9 @@ namespace FFscw
 			}
 			else
 			{
-				//kill this istance if another is open
-				if(Process.GetProcessesByName(Process.GetCurrentProcess().ProcessName).Count()>1)
+				if(Process.GetProcessesByName(Process.GetCurrentProcess().ProcessName).Count() > 1)
 				{
+					//if there are other istance of this program
 					exit(1);
 				}
 			}
