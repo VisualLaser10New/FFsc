@@ -68,6 +68,14 @@ namespace FFscw
 				//reset the database
 				resetDB();
 			}
+			else
+			{
+				//kill this istance if another is open
+				if(Process.GetProcessesByName(Process.GetCurrentProcess().ProcessName).Count()>1)
+				{
+					exit(1);
+				}
+			}
 
 			try
 			{
