@@ -59,12 +59,14 @@ namespace FFGlobalVar
 																				
 
 		public static Func<string, string, string, string> searchNormal = (table, path, name) =>
+																			"SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED; " +
 																			"SELECT * FROM " + table + " WHERE " +
 																			"Path LIKE '" + path + "%' AND Path NOT LIKE '" +path+"%\\%' "+
 																			"AND Name LIKE '" + name + "' "+
 																			"ORDER BY Path DESC;";
 
 		public static Func<string, string, string, string> searchRecursive= (table, path, name) =>
+																			"SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED; " +
 																			"SELECT * FROM " + table + " WHERE " +
 																			"Path LIKE '" + path + "%' AND Name LIKE '" + name + "' " +
 																			"ORDER BY Path DESC;";

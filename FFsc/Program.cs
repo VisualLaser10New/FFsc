@@ -93,13 +93,13 @@ namespace FFsc
 
 			if (res.Item1.Count() > 0)
 			{
-				Console.Write(ProgEnv.Sentences.foundFor(ProgEnv.PathStoreDB.dbTables[0].Replace("Table","")));
+				Console.Write(ProgEnv.Sentences.foundFor(res.Item1.Count(),ProgEnv.PathStoreDB.dbTables[0].Replace("Table","")));
 				printList(res.Item1);
 			}
 
 			if (res.Item2.Count() > 0)
 			{
-				Console.Write(ProgEnv.Sentences.foundFor(ProgEnv.PathStoreDB.dbTables[1].Replace("Table", "")));
+				Console.Write(ProgEnv.Sentences.foundFor(res.Item1.Count(), ProgEnv.PathStoreDB.dbTables[1].Replace("Table", "")));
 				printList(res.Item2);
 			}
 

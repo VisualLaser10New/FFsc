@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
-	<BaseOutputPath>C:\Users\Visual Laser 10 New\source\repos\FFsc\PublishVersion</BaseOutputPath>
+	<BaseOutputPath>..\PublishVersion</BaseOutputPath>
 	<Title>FFsc</Title>
 	<Authors>Ema3nto</Authors>
 	<Company>Visual Laser 10 New</Company>

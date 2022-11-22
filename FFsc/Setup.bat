@@ -12,7 +12,7 @@ del /Q "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\ffscw*"
 
 (echo cd "%cd%\" && echo.:loop && echo."%cd%\FFscw.exe" && echo.goto loop) > "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\ffscw.bat"
 
-reg add "HKCU\Environment" /v Path /t REG_SZ /d "%PATH%;%cd%\FFsc.exe;" /f
+reg add "HKCU\Environment" /v Path /t REG_SZ /d "%PATH%;%cd%\;" /f
 
 :rerun
 FFscw.exe -r -v

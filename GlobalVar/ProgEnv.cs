@@ -40,7 +40,7 @@ namespace FFGlobalVar
 			public static Func<string, string> fileRenamedERR = (path) => $"File/Dir \"{path}\" renamed error\n";
 
 
-			public static Func<string, string> foundFor = (table) => $"{table} found:\n\n";
+			public static Func<int, string, string> foundFor = (num, table) => $"{num} {table} found:\n\n";
 
 
 			public static string scannerIntro = "The disk will be scanned now, this may take a while\n";

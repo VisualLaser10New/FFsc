@@ -41,8 +41,8 @@ namespace FFsc
 			get
 			{
 				return new List<Example>() {
-					new Example("Search example.txt", new ParamsOption{Path= @"C:\Users\user1", Searching=@"example.txt"}),
-					new Example("Search all txt files", new ParamsOption{Path= @"C:\Users\user1", Searching=@"%.txt", Recursive=true}),
+					new Example("Search example.txt", new ParamsOption{Path= "\"C:\\\\Users\\user1\"", Searching=@"example.txt"}),
+					new Example("Search all txt files", new ParamsOption{Path= "\"C:\\\\Users\\user1\"", Searching=@"%.txt", Recursive=true}),
 					new Example("Don't type the \\ at the end in path", ""),
 				  };
 			}
