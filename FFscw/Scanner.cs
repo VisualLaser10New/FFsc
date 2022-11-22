@@ -75,21 +75,7 @@ namespace FFscw
 
 		private void saveDB(string table, List<string> contents, bool verbose)
 		{
-			ExInc tmpConf;
 			string outputStr = "";
-
-			if (table == ProgEnv.PathStoreDB.dbTables[0])
-			{
-				tmpConf = this.nowConf.fileConfs;
-			}
-			else if (table == ProgEnv.PathStoreDB.dbTables[1])
-			{
-				tmpConf = this.nowConf.dirConfs;
-			}
-			else
-			{
-				return;
-			}
 
 
 			foreach(var path in contents)
@@ -106,14 +92,31 @@ namespace FFscw
 
 				try
 				{
-					if (tmpConf.respectConfig(path, name))
+					if (table == ProgEnv.PathStoreDB.dbTables[0])
 					{
-						bBase.Write(table, path, name);
-						outputStr += ProgEnv.Sentences.fileStoredOK(path);
+						//if is a file check the configuration for files and for dirs
+						if (this.nowConf.fileConfs.respectConfig(path, name) && this.nowConf.dirConfs.respectConfig(path, name))
+						{
+							bBase.Write(table, path, name);
+							outputStr += ProgEnv.Sentences.fileStoredOK(path);
+						}
+						else
+						{
+							outputStr += ProgEnv.Sentences.fileExcludedInfo(path);
+						}
 					}
-					else
+					else if (table == ProgEnv.PathStoreDB.dbTables[1])
 					{
-						outputStr += ProgEnv.Sentences.fileExcludedInfo(path);
+						//if is a dir check only config for dirs
+						if (this.nowConf.dirConfs.respectConfig(path, name))
+						{
+							bBase.Write(table, path, name);
+							outputStr += ProgEnv.Sentences.fileStoredOK(path);
+						}
+						else
+						{
+							outputStr += ProgEnv.Sentences.fileExcludedInfo(path);
+						}
 					}
 				}
 				catch

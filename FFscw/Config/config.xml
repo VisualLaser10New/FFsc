@@ -2,24 +2,41 @@
 <?xml-model href="config.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
 
 <ffsc version="1.0">
-    <config id="0" active="true" root="C:\\Users\Visual Laser 10 New\Desktop\">
-        <directory>
-            <excluded>
-                <exclude path="C:\\Users\Visual Laser 10 New\Desktop\apk easy tool\"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type ="path"/>
-            </excluded>
-            <included>
-            </included>
-        </directory>
-        <file>
-            <excluded>
-            </excluded>
-            <included>
-            </included>
-        </file>
-    </config>
-	<config id="1" active="true" root="C:\\Windows\">
+	<config id="0" active="true" root="C:\\Users\Visual Laser 10 New\">
 		<directory>
 			<excluded>
+				<exclude path="C:\\Users\Visual Laser 10 New\.algobuild\"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type ="path"/>
+				<exclude path="C:\\Users\Visual Laser 10 New\.android\"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type ="path"/>
+				<exclude path="C:\\Users\Visual Laser 10 New\.cache\"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type ="path"/>
+				<exclude path="C:\\Users\Visual Laser 10 New\.dotnet\"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type ="path"/>
+				<exclude path="C:\\Users\Visual Laser 10 New\.gradle\"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type ="path"/>
+				<exclude path="C:\\Users\Visual Laser 10 New\.idlerc\"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type ="path"/>
+				<exclude path="C:\\Users\Visual Laser 10 New\.keras\"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type ="path"/>
+				<exclude path="C:\\Users\Visual Laser 10 New\.kivy\"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type ="path"/>
+				<exclude path="C:\\Users\Visual Laser 10 New\.lemminx\"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type ="path"/>
+				<exclude path="C:\\Users\Visual Laser 10 New\.librarymanager\"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type ="path"/>
+				<exclude path="C:\\Users\Visual Laser 10 New\.matplotlib\"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type ="path"/>
+				<exclude path="C:\\Users\Visual Laser 10 New\.MemuHyperv\"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type ="path"/>
+				<exclude path="C:\\Users\Visual Laser 10 New\.nuget\"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type ="path"/>
+				<exclude path="C:\\Users\Visual Laser 10 New\.omnisharp\"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type ="path"/>
+				<exclude path="C:\\Users\Visual Laser 10 New\.redhat\"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type ="path"/>
+				<exclude path="C:\\Users\Visual Laser 10 New\.ssh\"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type ="path"/>
+				<exclude path="C:\\Users\Visual Laser 10 New\.swt\"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type ="path"/>
+				<exclude path="C:\\Users\Visual Laser 10 New\.templateengine\"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type ="path"/>
+				<exclude path="C:\\Users\Visual Laser 10 New\.tizen\"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type ="path"/>
+				<exclude path="C:\\Users\Visual Laser 10 New\.VirtualBox\"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type ="path"/>
+				<exclude path="C:\\Users\Visual Laser 10 New\.vscode\"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type ="path"/>
+				<exclude path="C:\\Users\Visual Laser 10 New\AlgoBuild\"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type ="path"/>
+				<exclude path="C:\\Users\Visual Laser 10 New\AndroidStudioProject\"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type ="path"/>
+				<exclude path="C:\\Users\Visual Laser 10 New\ApkProjects\"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type ="path"/>
+				<exclude path="C:\\Users\Visual Laser 10 New\AppData\"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type ="path"/>
+				<exclude path="C:\\Users\Visual Laser 10 New\AshampooWinOptimizer 25\"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type ="path"/>
+				<exclude path="C:\\Users\Visual Laser 10 New\Bootstrap Studio Backups\"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type ="path"/>
+				<exclude path="C:\\Users\Visual Laser 10 New\Cisco Packet Tracer 8.1.1\"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type ="path"/>
+				<exclude path="C:\\Users\Visual Laser 10 New\Cisco Packet Tracer 8.2.0\"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type ="path"/>
+				<exclude path="C:\\Users\Visual Laser 10 New\source\"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type ="path"/>
+				<exclude path="C:\\Users\Visual Laser 10 New\VirtualBox VMs\"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type ="path"/>
+				<exclude path="C:\\Users\Visual Laser 10 New\workspace\"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type ="path"/>
 			</excluded>
 			<included>
 			</included>

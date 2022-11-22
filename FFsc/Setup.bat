@@ -1,6 +1,6 @@
 @ECHO OFF
 
-echo Before execute me read the readme or the docs at https://github.com/VisualLaser10New/FFsc#readme
+echo Before execute me read the readme or the docs at "https://github.com/VisualLaser10New/FFsc#readme"
 pause
 
 taskkill /im FFscw.exe /f

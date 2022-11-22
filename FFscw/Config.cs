@@ -62,11 +62,11 @@ namespace FFscw
 		
 		public bool respectConfig(string path, string name)
 		{
-			if(includePath.StartsWith(path) || includeName.Contains(name))
+			if(includePath.StartsWith(path) || path.StartsWithList(includePath) || includeName.Contains(name))
 			{
 				return true;
 			}
-			else if(excludePath.StartsWith(path) || excludeName.Contains(name))
+			else if(excludePath.StartsWith(path) || path.StartsWithList(excludePath) || excludeName.Contains(name))
 			{
 				return false;
 			}

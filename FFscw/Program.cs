@@ -22,11 +22,13 @@ namespace FFscw
 	/// 
 	/// <params>
 	/// -r reset database
+	/// -v verbose
 	/// </params>
 	internal class Program
 	{
 		static Config config;
 		static DBBase bBase;
+		static bool verbosity;
 
 		static void Main(string[] args)
 		{
@@ -78,6 +80,11 @@ namespace FFscw
 				}
 			}
 
+			if (args.ToList().Contains("-v"))
+			{
+				verbosity = true;
+			}
+
 			try
 			{
 				if (!bBase.Exists())
@@ -87,7 +94,7 @@ namespace FFscw
 				}
 				Console.Write(ProgEnv.Sentences.Analyzer.startAnalyzing);
 				Analyzer analyzer = new Analyzer(config, ref bBase);
-				analyzer.Analyze();
+				analyzer.Analyze(verbose:verbosity);
 				
 			}
 			catch(Exception e)
@@ -107,7 +114,7 @@ namespace FFscw
 			screen(true);
 			//Console.WriteLine("Scanning");
 			Scanner sc = new Scanner(config, bBase);
-			sc.Scan(verbose:true);
+			sc.Scan(verbose:verbosity);
 
 			screen(false);
 		}
