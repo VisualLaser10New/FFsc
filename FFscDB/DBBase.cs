@@ -260,7 +260,7 @@ namespace FFscDB
 			{
 				using (SqlCommand cmd = new SqlCommand(query, this.sqlConnection))
 				{
-					cmd.CommandTimeout = 0; //sometimes require lots of time
+					cmd.CommandTimeout = 0; //sometimes requires lots of time
 					using (SqlDataReader reader = cmd.ExecuteReader(System.Data.CommandBehavior.Default))
 					{
 						while (reader.Read())

@@ -3,8 +3,8 @@
 echo Before execute me read the readme or the docs at "https://github.com/VisualLaser10New/FFsc#readme"
 pause
 
-taskkill /im FFscw.exe /f
-taskkill /im ffsc.exe /f
+taskkill /im FFscw.exe /f > nul
+taskkill /im ffsc.exe /f > nul
 
 rmdir /S /Q ".\Data"
 del /Q "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\ffscw*"
