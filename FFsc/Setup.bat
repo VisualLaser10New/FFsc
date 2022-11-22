@@ -15,7 +15,7 @@ del /Q "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\ffscw*"
 reg add "HKCU\Environment" /v Path /t REG_SZ /d "%PATH%;%cd%\FFsc.exe;" /f
 
 :rerun
-FFscw.exe -r
+FFscw.exe -r -v
 goto :rerun
 
 REM kill all ffscw.exe and ffsc.exe already opened
