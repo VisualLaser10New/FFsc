@@ -17,7 +17,7 @@ namespace FFsc
 	/// <params>
 	///	ffsc.exe
 	///	
-	/// -p --path : path from where search
+	/// -p --path : path from where search (optional)
 	/// -s --searching : regex pattern of what are searching
 	/// -r --recursive : if there is search recursive
 	/// -h --help : print man

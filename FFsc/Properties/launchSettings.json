@@ -2,7 +2,7 @@
   "profiles": {
     "FFsc": {
       "commandName": "Project",
-      "commandLineArgs": "-p \"C:\\\\Users\\Visual Laser 10 New\\Desktop\" -s %"
+      "workingDirectory": "C:\\\\Users\\Visual Laser 10 New\\"
     }
   }
 }

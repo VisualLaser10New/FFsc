@@ -29,7 +29,7 @@ This is the callable, from terminal, command. It provvide to search the files an
 
 Parameters:
 - Nothing: show the guide
-- -p [string]: The path from where the search starts
+- -p [string]: The path from where the search starts (optional, if there isn't use the cwd as path)
 - -s [string]: The regex pattern of what are searching
 - -r: Use recursive mode to search in the folders too
 
