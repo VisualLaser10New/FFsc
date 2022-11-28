@@ -2,14 +2,22 @@
 /FFsc/.vs
 /FFsc/obj
 /FFsc/bin
+/FFsc/Properties
 
 /FFscw/obj
 /FFscw/bin
+/FFscw/Properties
 
 /FFscDB/obj
 /FFscDB/bin
+/FFscDB/Properties
 
 /GlobalVar/obj
 /GlobalVar/bin
+/GlobalVar/Properties
 
 /PublishVersion
+
+*.suo
+*.user
+*.pfx
